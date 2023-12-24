@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="InternshipProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--bootstrap installation--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables installation--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome installation--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--our Custom CSS--%>
+    <link href="css/customStyleSheet.css" rel="stylesheet" />
+
+    <%--JavaScript installation--%>
+
+    <%--JQuery installation--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper installation--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js installation--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/feedback.png"/>
+                    Feedback Application
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-expand="false" aria-lable="Toggle navigation" >
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="navbar-item active">
+                            <a href="Login.aspx"><asp:LinkButton Class="nav-link" ID="LinkButton1" runat="server" >User Login</asp:LinkButton></a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a href="userSignUp.aspx"><asp:LinkButton Class="nav-link" ID="LinkButton2" runat="server" >Sign Up</asp:LinkButton></a>
+                        </li>
+                        <li class="navbar-item active">
+                            <asp:LinkButton Class="nav-link" ID="LinkButton3" runat="server" >Logout</asp:LinkButton>
+                        </li>
+                        <li class="navbar-item active">
+                            <asp:LinkButton Class="nav-link" ID="LinkButton4" runat="server" >Hello User</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                      <p>&copy All rights Reserved. Aabhash Arun Burman</p> 
+                     </div>                    
+                  </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+        
+
+    </form>
+</body>
+</html>
